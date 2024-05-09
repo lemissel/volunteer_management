@@ -1,0 +1,21 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = "mongodb+srv://youruser:yourpass@cluster0.vcgeqcs.mongodb.net/volunteer_management"
+}
+
+model Shelters {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  name    String
+  address String?
+  city    String
+  neighborhood String
+  qrcode  String
+  contacts String[]
+
+  @@map("shelters")
+}
+
