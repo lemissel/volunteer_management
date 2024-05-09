@@ -34,3 +34,42 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+<!-- 
+Projeto Voluntario
+—
+
+Ter autenticação
+
+Cadastro Abrigo
+- Nome
+- Endereço (opcional)
+    - Logradouro (R. Recanto do Sol, 355 - Ingleses do Rio Vermelho)
+    - Cidade
+    - Bairro
+- QRCode/Codigo
+- Contatos ([]string)
+- Voluntários
+
+Name, address, city, neighborhood, qrcode, contacts
+
+Cadastro voluntário
+- Voluntários
+    - Nome
+    - Contato
+    - CPF
+    - 
+
+Entradas e Saídas do Voluntário
+- Voluntario ID
+- Abrigo ID
+- Chek-in
+- Check-out
+
+
+Objetivo, identificar quantos voluntários  e quem é os voluntários.
+
+$ prisma generate
+$ prisma db push
+ -->
