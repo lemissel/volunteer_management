@@ -50,21 +50,3 @@ const createShelter = async (req: NextRequest) => {
         return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
     }
 };
-
-// export const updateShelter = async (req: NextApiRequest, res: NextApiResponse) => {
-//     const { id }: { id?: string } = req.query;
-//     const { shelter }: { shelter: Shelter } = req.body;
-//     try {
-//         if (!id) {
-//             return res.status(400).json({ error: 'Missing ID' });
-//         }
-//         if (!shelter.name || !shelter.address || !shelter.city || !shelter.neighborhood || !shelter.qrcode || !shelter.contacts) {
-//             return res.status(400).json({ error: 'Missing field' });
-//         }
-//         const updatedShelter = await prisma.shelters.update({ where: { id: id }, data: shelter });
-//         res.status(200).json(updatedShelter);
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).json({ error: 'Internal Server Error' });
-//     }
-// };
